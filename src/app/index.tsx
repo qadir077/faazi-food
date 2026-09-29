@@ -25,7 +25,7 @@ export default function SplashScreen() {
         {/* Logo */}
         <View className="items-center justify-center rounded-full border border-[#DA6F1C]/30 bg-[#111111] p-5">
           <Image
-            source={require('../../../assets/images/logo.png')}
+            source={require('../../assets/images/logo.png')}
             resizeMode="contain"
             className="h-60 w-60"
           />

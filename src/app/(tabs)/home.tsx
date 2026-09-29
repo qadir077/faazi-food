@@ -5,7 +5,7 @@ export default function Home() {
     <View className='main'>
 
         <View className='top-section'>
-            <Text></Text>
+            <Text className='text-white text-2xl'>this is homepage</Text>
             <Image></Image>
 
         </View>
