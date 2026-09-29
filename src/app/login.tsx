@@ -1,18 +1,25 @@
-import { View, Text } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
+import { router } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function LoginScreen() {
+  const handleBack = () => {
+    router.back();
+  };
+
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: '#0B0B0B',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <Text style={{ color: '#FFFFFF', fontSize: 30, fontWeight: '700' }}>
-        Login
-      </Text>
+    <View className="px-6 pt-6">
+      <Pressable
+        onPress={handleBack}
+        className="h-11 w-11 items-center flex justify-center rounded-full bg-[#1A1A1A]"
+      >
+        <Ionicons
+          name="arrow-back"
+          size={22}
+          color="#FFFFFF"
+        />
+
+      </Pressable>
     </View>
   );
 }
