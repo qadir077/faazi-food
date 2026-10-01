@@ -76,6 +76,8 @@ export default function AppTabs() {
           Explore
         </NativeTabs.Trigger.Label>
 
+        
+
         <NativeTabs.Trigger.Icon>
           <NativeTabs.Trigger.VectorIcon
             family={Ionicons}
