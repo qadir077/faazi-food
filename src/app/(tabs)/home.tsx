@@ -8,6 +8,7 @@ export default function Home() {
             <Text className='text-white text-2xl'>this is homepage</Text>
             <Image></Image>
 
+
         </View>
 
         <View className='serch-bar'>
