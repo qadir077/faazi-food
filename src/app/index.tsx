@@ -19,6 +19,8 @@ export default function SplashScreen() {
       <View className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-[#DA6F1C]/10" />
       <View className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-[#DA6F1C]/10" />
 
+
+
       {/* Main Content */}
       <View className="flex-1 items-center justify-center px-6">
 
