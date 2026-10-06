@@ -35,7 +35,10 @@
     "eslint-config-expo": "~57.0.2",
     "tailwindcss": "^3.4.17",
     "typescript": "~6.0.3"
+
   },
+
+  
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -45,5 +48,5 @@
     "lint": "expo lint"
   },
   "private": true
-  
+
 }

@@ -33,6 +33,8 @@ export default function AppTabs() {
   );
 }
 
+
+
 export function TabButton({ children, isFocused, ...props }: TabTriggerSlotProps) {
   return (
     <Pressable {...props} style={({ pressed }) => pressed && styles.pressed}>
@@ -46,6 +48,7 @@ export function TabButton({ children, isFocused, ...props }: TabTriggerSlotProps
     </Pressable>
   );
 }
+
 
 export function CustomTabList(props: TabListProps) {
   const scheme = useColorScheme();
@@ -74,6 +77,7 @@ export function CustomTabList(props: TabListProps) {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   tabListContainer: {
