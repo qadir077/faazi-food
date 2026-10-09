@@ -32,6 +32,8 @@ export default function TabTwoScreen() {
     },
   });
 
+  
+
   return (
     <ScrollView
       style={[styles.scrollView, { backgroundColor: theme.background }]}
