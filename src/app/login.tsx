@@ -88,7 +88,10 @@ export default function LoginScreen() {
       </View>
 
 
+
       <View className="px-6 pb-10">
+
+
 
         <Pressable
           className="flex-row items-center justify-center rounded-xl bg-[#DA6F1C] py-4 active:opacity-80"
