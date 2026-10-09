@@ -17,6 +17,7 @@ export default function TabTwoScreen() {
     ...safeAreaInsets,
     bottom: safeAreaInsets.bottom + BottomTabInset + Spacing.three,
   };
+  
   const theme = useTheme();
 
   const contentPlatformStyle = Platform.select({
@@ -32,7 +33,7 @@ export default function TabTwoScreen() {
     },
   });
 
-  
+
 
   return (
     <ScrollView
