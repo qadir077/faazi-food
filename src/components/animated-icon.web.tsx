@@ -39,6 +39,7 @@ const logoKeyframe = new Keyframe({
   },
 });
 
+
 const glowKeyframe = new Keyframe({
   0: {
     transform: [{ rotateZ: '-180deg' }, { scale: 0.8 }],
@@ -53,6 +54,7 @@ const glowKeyframe = new Keyframe({
     transform: [{ rotateZ: '7200deg' }],
   },
 });
+
 
 export function AnimatedIcon() {
   return (
