@@ -100,18 +100,6 @@ export default function DiscountCarousel() {
                 )}
             />
 
-            {/* Pagination Dots */}
-            <View className="mt-3 flex-row justify-center gap-2">
-                {discountBanners.map((banner, index) => (
-                    <View
-                        key={banner.id}
-                        className={`h-2 rounded-full ${activeIndex === index
-                                ? 'w-6 bg-[#DA6F1C]'
-                                : 'w-2 bg-[#444444]'
-                            }`}
-                    />
-                ))}
-            </View>
         </View>
     );
 }
