@@ -9,7 +9,11 @@ import FoodItems from '@/components/food-items';
 
 export default function Home() {
   return (
-    <View className='main'>
+    <ScrollView
+      className='main flex-1'
+      showsVerticalScrollIndicator={false}
+      contentContainerStyle={{ paddingBottom: 24 }}
+    >
 
    <View className="bg-[#DA6F1C] rounded-b-[35px] px-5 pt-12 pb-5">
 
@@ -114,7 +118,7 @@ export default function Home() {
       <FoodItems/>
 
 
-    </View>
+    </ScrollView>
   )
 }
 
