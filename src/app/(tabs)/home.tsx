@@ -2,6 +2,7 @@ import Ionicons from '@expo/vector-icons/build/Ionicons';
 import { Text, View, Pressable, ScrollView, TextInput, Image } from 'react-native';
 import { foodCategories } from '@/components/data/data';
 import DiscountCarousel from '@/components/discount';
+import FoodItems from '@/components/food-items';
 
 
 
@@ -110,7 +111,7 @@ export default function Home() {
       </ScrollView>
 
       <DiscountCarousel />
-
+      <FoodItems/>
 
 
     </View>
