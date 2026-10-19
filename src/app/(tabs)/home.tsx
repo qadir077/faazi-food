@@ -1,39 +1,93 @@
 import Ionicons from '@expo/vector-icons/build/Ionicons';
-import { Text, View, Pressable, ScrollView, Image } from 'react-native';
+import { Text, View, Pressable, ScrollView, TextInput, Image } from 'react-native';
 import { foodCategories } from '@/components/data/data';
-import { discountBanners } from '@/components/data/data';
+import DiscountCarousel from '@/components/discount';
+
+
 
 
 export default function Home() {
   return (
     <View className='main'>
 
-      <View className='top-section bg-[#DA6F1C] h-[150px] rounded-b-[50px]  '>
+   <View className="bg-[#DA6F1C] rounded-b-[35px] px-5 pt-12 pb-5">
 
-        <View className='flex-row mt-10 mx-6 justify-around'>
-          <View className="border border-black rounded-full p-3">
-            <Ionicons
-              name="person"
-              size={22}
-              color="black"
-            />
-          </View>
-          <Text className='text-white text-2xl ml-3'>Welcome back!</Text>
+  {/* Top Section */}
+  <View className="flex-row items-center justify-between">
 
-          <Pressable className="h-12 w-12 items-center justify-center rounded-full bg-[#1A1A1A]">
-            <Ionicons
-              name="notifications-outline"
-              size={22}
-              color="#DA6F1C"
-            />
-          </Pressable>
-        </View>
-
+    {/* Profile + User Name */}
+    <View className="flex-row items-center gap-3">
+      <View className="h-12 w-12 items-center justify-center rounded-2xl border border-white/20 bg-black">
+        <Ionicons name="person" size={25}     color="#DA6F1C" />
       </View>
 
-      <View className='flex-row justify-between mx-6 mt-6'>
-        <Text className='text-xl font-bold text-white'>Category</Text>
-        <Text className='text-lg text-white'>See all</Text>
+      <View>
+     
+        <Text className="text-xl font-bold  text-black/70">
+          Qadir Faziyaan
+        </Text>
+
+        <Text className="text-xs  text-black/70">
+          What would you like to eat?
+        </Text>
+      </View>
+    </View>
+
+    {/* Notification */}
+    <Pressable className="h-12 w-12 items-center justify-center rounded-2xl border border-white/20 bg-black">
+      <Ionicons
+        name="notifications-outline"
+        size={23}
+        color="#DA6F1C"
+      />
+      <View className="absolute right-3 top-2 h-2 w-2 rounded-full bg-red-500" />
+    </Pressable>
+  </View>
+
+  {/* Search Bar */}
+  <View className="mt-4 h-14 flex-row items-center rounded-2xl bg-[#1A1A1A] px-4">
+
+    <Ionicons
+      name="search-outline"
+      size={22}
+      color="#DA6F1C"
+    />
+
+    <TextInput
+      placeholder="Search food, restaurants..."
+      placeholderTextColor="#888888"
+      className="ml-3 flex-1 text-base text-white"
+      returnKeyType="search"
+    />
+
+    <View className="mx-3 h-7 w-[1px] bg-[#444444]" />
+
+    <Pressable
+      onPress={() => {
+      }}
+      className="h-10 w-10 items-center justify-center rounded-xl bg-[#DA6F1C]"
+    >
+      <Ionicons
+        name="options-outline"
+        size={22}
+        color="#FFFFFF"
+      />
+    </Pressable>
+
+  </View>
+
+</View>
+
+      <View className="mt-6 flex-row items-center justify-between px-4">
+        <Text className="text-xl font-bold text-white">
+          Categories
+        </Text>
+
+        <Pressable>
+          <Text className="text-md font-semibold text-[#DA6F1C]">
+            See all
+          </Text>
+        </Pressable>
       </View>
 
       <ScrollView
@@ -55,52 +109,9 @@ export default function Home() {
         ))}
       </ScrollView>
 
-     <View className="bg-black pt-4">
-      <FlatList
-        ref={listRef}
-        data={discountBanners}
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        keyExtractor={(item) => item.id}
-        contentContainerStyle={{
-          paddingHorizontal: 16,
-          gap,
-        }}
-        snapToInterval={bannerWidth + gap}
-        decelerationRate="fast"
-        onMomentumScrollEnd={handleScroll}
-        getItemLayout={(_, index) => ({
-          length: bannerWidth + gap,
-          offset: (bannerWidth + gap) * index,
-          index,
-        })}
-        renderItem={({ item }) => (
-          <View
-            style={{ width: bannerWidth, height: 150 }}
-            className="overflow-hidden rounded-2xl"
-          >
-            <Image
-              source={item.image}
-              resizeMode="cover"
-              className="h-full w-full"
-            />
-          </View>
-        )}
-      />
+      <DiscountCarousel />
 
-      <View className="mt-3 flex-row justify-center gap-2">
-        {discountBanners.map((banner, index) => (
-          <View
-            key={banner.id}
-            className={`h-2 rounded-full ${
-              activeIndex === index
-                ? 'w-6 bg-[#DA6F1C]'
-                : 'w-2 bg-[#444444]'
-            }`}
-          />
-        ))}
-      </View>
-    </View>
+
 
     </View>
   )

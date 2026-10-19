@@ -104,10 +104,5 @@ export const discountBanners = [
     title: 'Sweet Cravings',
     image: require('../../../assets/images/discount5.png'),
   },
-  {
-    id: '6',
-    title: 'Fresh & Fit',
-    image: require('../../../assets/images/discount6.png'),
-  },
 ];
 
