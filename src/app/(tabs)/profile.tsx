@@ -186,9 +186,12 @@ export default function ProfileScreen() {
 					</Text>
 				</Pressable>
 
+
 				<Text className="mt-5 text-center text-xs text-gray-600">
 					FOODIE • Version 1.0.0
 				</Text>
+				
+
 			</ScrollView>
 		</View>
 	);
