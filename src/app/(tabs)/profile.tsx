@@ -181,11 +181,9 @@ export default function ProfileScreen() {
 						size={21}
 						color="#F87171"
 					/>
-					
 					<Text className="ml-2 font-semibold text-red-400">
 						Log Out
 					</Text>
-
 				</Pressable>
 
 				<Text className="mt-5 text-center text-xs text-gray-600">
