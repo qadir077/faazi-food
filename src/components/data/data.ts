@@ -210,7 +210,7 @@ export const foodItems: FoodItem[] = [
     category: "Pizza",
     description: "Classic pizza topped with mozzarella, tomato and basil.",
     price: 249,
-    rating: 4.7,
+    rating: 4.2,
     preparationTime: 20,
     isVeg: true,
     image: "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80",
