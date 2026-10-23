@@ -182,7 +182,7 @@ export const foodItems: FoodItem[] = [
     category: "Burger",
     description: "Spicy crispy chicken with crunchy lettuce and chilli mayo.",
     price: 219,
-    rating: 4.6,
+    rating: 4.3,
     preparationTime: 16,
     isVeg: false,
     image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=80",
