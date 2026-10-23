@@ -130,7 +130,7 @@ export const foodItems: FoodItem[] = [
     category: "Burger",
     description: "Juicy grilled patty with fresh lettuce, tomato and house sauce.",
     price: 199,
-    rating: 4.7,
+    rating: 4.9,
     preparationTime: 15,
     isVeg: false,
     image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80",
