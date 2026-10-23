@@ -15,73 +15,73 @@ export default function Home() {
       contentContainerStyle={{ paddingBottom: 24 }}
     >
 
-   <View className="bg-[#DA6F1C] rounded-b-[35px] px-5 pt-12 pb-5">
+      <View className="bg-[#DA6F1C] rounded-b-[35px] px-5 pt-12 pb-5">
 
-  {/* Top Section */}
-  <View className="flex-row items-center justify-between">
+        {/* Top Section */}
+        <View className="flex-row items-center justify-between">
 
-    {/* Profile + User Name */}
-    <View className="flex-row items-center gap-3">
-      <View className="h-12 w-12 items-center justify-center rounded-2xl border border-white/20 bg-black">
-        <Ionicons name="person" size={25}     color="#DA6F1C" />
+          {/* Profile + User Name */}
+          <View className="flex-row items-center gap-3">
+            <View className="h-12 w-12 items-center justify-center rounded-2xl border border-white/20 bg-black">
+              <Ionicons name="person" size={25} color="#DA6F1C" />
+            </View>
+
+            <View>
+
+              <Text className="text-xl font-bold  text-black/70">
+                Qadir Faziyaan
+              </Text>
+
+              <Text className="text-xs  text-black/70">
+                What would you like to eat?
+              </Text>
+            </View>
+          </View>
+
+          {/* Notification */}
+          <Pressable className="h-12 w-12 items-center justify-center rounded-2xl border border-white/20 bg-black">
+            <Ionicons
+              name="notifications-outline"
+              size={23}
+              color="#DA6F1C"
+            />
+            <View className="absolute right-3 top-2 h-2 w-2 rounded-full bg-red-500" />
+          </Pressable>
+        </View>
+
+        {/* Search Bar */}
+        <View className="mt-4 h-14 flex-row items-center rounded-2xl bg-[#1A1A1A] px-4">
+
+          <Ionicons
+            name="search-outline"
+            size={22}
+            color="#DA6F1C"
+          />
+
+          <TextInput
+            placeholder="Search food, restaurants..."
+            placeholderTextColor="#888888"
+            className="ml-3 flex-1 text-base text-white"
+            returnKeyType="search"
+          />
+
+          <View className="mx-3 h-7 w-[1px] bg-[#444444]" />
+
+          <Pressable
+            onPress={() => {
+            }}
+            className="h-10 w-10 items-center justify-center rounded-xl bg-[#DA6F1C]"
+          >
+            <Ionicons
+              name="options-outline"
+              size={22}
+              color="#FFFFFF"
+            />
+          </Pressable>
+
+        </View>
+
       </View>
-
-      <View>
-     
-        <Text className="text-xl font-bold  text-black/70">
-          Qadir Faziyaan
-        </Text>
-
-        <Text className="text-xs  text-black/70">
-          What would you like to eat?
-        </Text>
-      </View>
-    </View>
-
-    {/* Notification */}
-    <Pressable className="h-12 w-12 items-center justify-center rounded-2xl border border-white/20 bg-black">
-      <Ionicons
-        name="notifications-outline"
-        size={23}
-        color="#DA6F1C"
-      />
-      <View className="absolute right-3 top-2 h-2 w-2 rounded-full bg-red-500" />
-    </Pressable>
-  </View>
-
-  {/* Search Bar */}
-  <View className="mt-4 h-14 flex-row items-center rounded-2xl bg-[#1A1A1A] px-4">
-
-    <Ionicons
-      name="search-outline"
-      size={22}
-      color="#DA6F1C"
-    />
-
-    <TextInput
-      placeholder="Search food, restaurants..."
-      placeholderTextColor="#888888"
-      className="ml-3 flex-1 text-base text-white"
-      returnKeyType="search"
-    />
-
-    <View className="mx-3 h-7 w-[1px] bg-[#444444]" />
-
-    <Pressable
-      onPress={() => {
-      }}
-      className="h-10 w-10 items-center justify-center rounded-xl bg-[#DA6F1C]"
-    >
-      <Ionicons
-        name="options-outline"
-        size={22}
-        color="#FFFFFF"
-      />
-    </Pressable>
-
-  </View>
-
-</View>
 
       <View className="mt-6 flex-row items-center justify-between px-4">
         <Text className="text-xl font-bold text-white">
@@ -115,7 +115,7 @@ export default function Home() {
       </ScrollView>
 
       <DiscountCarousel />
-      <FoodItems/>
+      <FoodItems />
 
 
     </ScrollView>
