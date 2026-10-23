@@ -143,7 +143,7 @@ export const foodItems: FoodItem[] = [
     category: "Burger",
     description: "Grilled burger topped with melted cheese and creamy sauce.",
     price: 229,
-    rating: 4.8,
+    rating: 4.2,
     preparationTime: 15,
     isVeg: false,
     image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80",
