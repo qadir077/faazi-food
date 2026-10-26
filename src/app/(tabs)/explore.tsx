@@ -61,6 +61,7 @@ export default function TabTwoScreen() {
           </ExternalLink>
         </ThemedView>
 
+
         <ThemedView style={styles.sectionsWrapper}>
           <Collapsible title="File-based routing">
             <ThemedText type="small">
@@ -89,6 +90,7 @@ export default function TabTwoScreen() {
               />
             </ThemedView>
           </Collapsible>
+
 
 
           <Collapsible title="Images">
@@ -128,6 +130,8 @@ export default function TabTwoScreen() {
     </ScrollView>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   scrollView: {
