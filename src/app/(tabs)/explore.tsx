@@ -90,6 +90,7 @@ export default function TabTwoScreen() {
             </ThemedView>
           </Collapsible>
 
+
           <Collapsible title="Images">
             <ThemedText type="small">
               For static images, use the <ThemedText type="code">@2x</ThemedText> and{' '}
