@@ -47,6 +47,10 @@ export default function TabTwoScreen() {
             This starter app includes example{'\n'}code to help you get started.
           </ThemedText>
 
+
+
+
+
           <ExternalLink href="https://docs.expo.dev" asChild>
             <Pressable style={({ pressed }) => pressed && styles.pressed}>
               <ThemedView type="backgroundElement" style={styles.linkButton}>
@@ -60,6 +64,9 @@ export default function TabTwoScreen() {
             </Pressable>
           </ExternalLink>
         </ThemedView>
+
+
+
 
 
         <ThemedView style={styles.sectionsWrapper}>
