@@ -45,7 +45,7 @@ export default function TabTwoScreen() {
 
       <ThemedView style={styles.container}>
 
-        
+
         <ThemedView style={styles.titleContainer}>
           <ThemedText type="subtitle">Explore</ThemedText>
           <ThemedText style={styles.centerText} themeColor="textSecondary">
@@ -96,6 +96,8 @@ export default function TabTwoScreen() {
                 style={styles.imageTutorial}
               />
             </ThemedView>
+
+            
           </Collapsible>
 
 
