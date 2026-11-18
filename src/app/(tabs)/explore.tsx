@@ -98,6 +98,8 @@ export default function TabTwoScreen() {
             </ThemedView>
 
             
+
+
           </Collapsible>
 
 
@@ -112,6 +114,8 @@ export default function TabTwoScreen() {
             <ExternalLink href="https://reactnative.dev/docs/images">
               <ThemedText type="linkPrimary">Learn more</ThemedText>
             </ExternalLink>
+
+            
           </Collapsible>
 
           <Collapsible title="Light and dark mode components">
