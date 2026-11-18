@@ -115,7 +115,10 @@ export default function TabTwoScreen() {
               <ThemedText type="linkPrimary">Learn more</ThemedText>
             </ExternalLink>
 
+
             
+
+
           </Collapsible>
 
           <Collapsible title="Light and dark mode components">
